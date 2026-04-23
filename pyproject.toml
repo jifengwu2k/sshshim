@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sshshim"
-version = "0.1.0a0"
+version = "0.1.0a1"
 description = "SSH connection reuse through a temporary localhost SSH endpoint."
 readme = "README.md"
 requires-python = ">=2"
@@ -23,6 +23,9 @@ dependencies = [
     "textcompat",
     "typing; python_version < '3.5'"
 ]
+
+[project.scripts]
+sshshim = "sshshim:main"
 
 [project.urls]
 "Homepage" = "https://github.com/jifengwu2k/sshshim"
